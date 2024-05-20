@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+
+	connect "github.com/harsh082ip/Redis-golang/Connect"
 )
 
 func main() {
@@ -19,7 +21,7 @@ func main() {
 
 	// rdb := redis.NewClient(opt)
 
-	rdb := RedisConnect()
+	rdb := connect.RedisConnect()
 	// fmt.Println(rdb)
 
 	// Ping the Redis server
@@ -47,4 +49,5 @@ func main() {
 	fmt.Println(success)
 	val, _ = rdb.Get(ctx, "name").Result()
 	fmt.Println(val)
+
 }

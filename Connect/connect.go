@@ -1,4 +1,4 @@
-package main
+package connect
 
 import "github.com/redis/go-redis/v9"
 
