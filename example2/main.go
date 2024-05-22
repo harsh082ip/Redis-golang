@@ -12,6 +12,23 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
+/*
+
+Problem 2: Implement Cache Expiration and Invalidation
+
+Create an application that caches user profile data in Redis. Implement cache expiration and invalidation logic.
+
+Requirements:
+
+    Use Gin for the web framework.
+    When a user profile is requested, check if it's in the cache.
+        If it is, return the cached data.
+        If it isn't, fetch it from a simulated data source, cache it, and return it.
+    Implement cache expiration (e.g., profiles expire after 10 minutes).
+    Implement a way to invalidate the cache when a user profile is updated.
+
+*/
+
 const (
 	WEBPORT = ":8002"
 )
