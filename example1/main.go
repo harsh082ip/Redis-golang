@@ -77,4 +77,5 @@ func main() {
 	})
 
 	router.Run(":8002")
+	// http.ListenAndServe(":8002", router)
 }
